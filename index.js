@@ -51,6 +51,7 @@ const DragSimulator = {
         ...clientPosition,
         eventConstructor: 'MouseEvent',
         ...this.options.source,
+        force:true,
       })
       .trigger('dragstart', { dataTransfer, eventConstructor: 'DragEvent', ...this.options.source })
   },
@@ -60,6 +61,7 @@ const DragSimulator = {
         dataTransfer,
         eventConstructor: 'DragEvent',
         ...this.options.target,
+        force:true,
       })
       .then(() => {
         if (isAttached(this.targetElement)) {
@@ -70,6 +72,7 @@ const DragSimulator = {
               ...clientPosition,
               eventConstructor: 'MouseEvent',
               ...this.options.target,
+              force:true,
             })
             .then(() => {
               if (isAttached(this.targetElement)) {
@@ -79,6 +82,7 @@ const DragSimulator = {
                   ...clientPosition,
                   eventConstructor: 'PointerEvent',
                   ...this.options.target,
+                  force:true,
                 })
               }
             })
@@ -96,11 +100,13 @@ const DragSimulator = {
         })
         .trigger('mousemove', {
           ...this.options.target,
+          force:true,
           ...clientPosition,
           eventConstructor: 'MouseEvent',
         })
         .trigger('pointermove', {
           ...this.options.target,
+          force:true,
           ...clientPosition,
           eventConstructor: 'PointerEvent',
         })
