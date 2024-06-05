@@ -1,5 +1,5 @@
 {
-  "name": "@4tw/cypress-drag-drop",
+  "name": "@isight/cypress-drag-drop",
   "version": "2.2.5",
   "description": "A cypress child command for drag'n'drop support.",
   "main": "index.js",
@@ -13,7 +13,7 @@
   "prettier": "@4tw/prettier-config",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/4teamwork/cypress-drag-drop.git"
+    "url": "git+https://github.com/i-Sight/cypress-drag-drop.git"
   },
   "keywords": [
     "cypress",
@@ -27,7 +27,7 @@
   "bugs": {
     "url": "https://github.com/4teamwork/cypress-drag-drop/issues"
   },
-  "homepage": "https://github.com/4teamwork/cypress-drag-drop#readme",
+  "homepage": "https://github.com/i-Sight/cypress-drag-drop#readme",
   "devDependencies": {
     "@4tw/eslint-config": "^0.6.0",
     "@4tw/prettier-config": "^1.0.3",
