@@ -1,5 +1,5 @@
 {
-  "name": "@isight/cypress-drag-drop",
+  "name": "@4tw/cypress-drag-drop",
   "version": "2.2.5",
   "description": "A cypress child command for drag'n'drop support.",
   "main": "index.js",
